@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Kare Regular';
+    src: url('fonts/Kare.ttf') format('truetype');
+    src: url('fonts/Kare.woff') format('woff');
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +14,8 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: #987284;
+    background-color: #000099;
     font-size: 60px;
-}
-.optika {
-    color: rgb(90, 17, 29);
 }
 #btnGenerate {
     display: flex;
@@ -22,18 +24,52 @@
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    background-color: #FFDDD2;
+    background-color: #00CC00;
 }
 #btnGenerate:hover {
     box-shadow: 0 0 10px black;
 }
 #btnGenerate:active {
-    background-color: #FFDFDA;
+    background-color: #10C610;
 }
 .result-wrap {
-    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000099;
 }
 #resultName {
-    font-family: 'Raleway', sans-serif;
-    text-shadow: 3px 3px 5px #FFDDD2;
+    font-family: 'Kare Regular';
+    text-shadow: 3px 3px 5px black;
+    font-size: 180px;
+    padding-bottom: 50%;
+}
+@media (max-width: 440px) {
+    #btnGenerate {
+        width: 320px;
+        height: 320px;
+    }
+    #resultName {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 360px) {
+    #btnGenerate {
+        width: 260px;
+        height: 260px;
+    }
+    #resultName {
+        font-size: 130px;
+    }
+}
+
+@media (max-width: 300px) {
+    #btnGenerate {
+        width: 200px;
+        height: 200px;
+    }
+    #resultName {
+        font-size: 112px;
+    }
 }
