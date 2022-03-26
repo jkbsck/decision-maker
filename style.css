@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #987284;
+    font-size: 60px;
+}
+.optika {
+    color: rgb(90, 17, 29);
+}
+#btnGenerate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #FFDDD2;
+}
+#btnGenerate:hover {
+    box-shadow: 0 0 10px black;
+}
+#btnGenerate:active {
+    background-color: #FFDFDA;
+}
+.result-wrap {
+    height: 200px;
+}
+#resultName {
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px 5px #FFDDD2;
+}
